@@ -1,0 +1,191 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+/* 폰트 */
+@font-face {
+    font-family: 'NPSfontBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2310@1.0/NPSfontBold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'S-CoreDream-3Light';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* css 작성 */
+body{
+    font-family: S-CoreDream-3Light;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.header{
+    width: 100%;
+    height: 40px;
+    background-color: #1E3D6B;
+    display: flex;
+    justify-content: center;
+    align-items:center
+}
+
+.title{
+    font-family: NPSfontBold;
+    font-weight: 800;
+    font-size: 20px;
+    color: #ffffff; 
+}
+
+.contents{
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    height: 500px;
+}
+
+.resultDiv{
+    width: 65%;
+    background-color: white;
+}
+
+
+
+.memberDiv{
+    width: 35%;
+    background-color: #f8f5f5;
+    display: flex;
+    flex-direction: column;
+}
+
+.addMember{
+    display: flex;
+    padding: 10px 0;
+}
+
+#mbrText{
+    width: 80%;
+}
+
+.matchBtn{
+    margin-top: 10px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    background-color: #5995DD;
+    color: white;
+    font-weight: 600;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+    align-items: center;
+    margin: 10px;
+}
+
+.addBtn{
+    background-color:#1E3D6B;
+    width: 20%;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-weight: 700;
+    font-size: larger;
+}
+
+.mbrList{
+    margin-left: 10px;
+    font-size: 11px;
+}
+
+.matchArea{
+    font-size: 11px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 15px;
+    font-weight: 600;
+}
+
+.matchArea > p {
+    border-bottom: dashed 1px  #bcd3ef;
+    padding-bottom: 10px;
+}
+
+@media (min-width: 400px){
+    body{
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .title{
+        font-size: 24px;
+    }
+
+    .matchBtn{
+        font-size: 15px;
+    }
+
+    .matchArea{
+        font-size: 10px;
+    }
+}
+
+@media (min-width: 500px){
+    
+    .matchArea{
+        font-size: 15px;
+    }
+
+    .mbrList{
+        font-size: 14px;
+    }
+}

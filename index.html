@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Matching</title>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <p class="title">Sports Matching!</p>
+        </div>
+    </header>
+    <main>
+        <section class="contents">
+            <div class="resultDiv">
+                <div class="matchArea">
+                    <p>최우제, 류민석 VS 이민형, 이상혁 </p>
+                    <p>최우제, 류민석 VS 이민형, 이상혁 </p>
+                    <p>최우제, 류민석 VS 이민형, 이상혁 </p>
+                    <p>최우제, 류민석 VS 이민형, 이상혁 </p>
+                </div>
+            </div>
+            <div class="memberDiv">
+                <button class="matchBtn" onclick="onMakeMatch();">Matching!</button>
+                <input id="gameCnt" type="number" min="1" max="5" value="1">
+                <div class="addMember">
+                    <input type="text" id="mbrText" placeholder="add Member...">
+                    <button class="addBtn">+</button>
+                </div>
+                <div class="mbrList">
+                    <input type="checkbox" class="mbr" id="mbr1" value="이상혁">
+                    <label for="mbr1">이상혁</label><br>
+                    <input type="checkbox" class="mbr" id="mbr2" value="최우제">
+                    <label for="mbr2">최우제</label><br>
+                    <input type="checkbox" class="mbr" id="mbr3" value="이민형">
+                    <label for="mbr3">이민형</label><br>
+                    <input type="checkbox" class="mbr" id="mbr4" value="문현준">
+                    <label for="mbr4">문현준</label><br>
+                    <input type="checkbox" class="mbr" id="mbr5" value="류민석">
+                    <label for="mbr5">류민석</label><br>
+                    <input type="checkbox" class="mbr" id="mbr6" value="김건부">
+                    <label for="mbr6">김건부</label><br>
+                    <input type="checkbox" class="mbr" id="mbr7" value="허 수">
+                    <label for="mbr7">허 수</label><br>
+                    <input type="checkbox" class="mbr" id="mbr8" value="김혁규">
+                    <label for="mbr8">김혁규</label><br>
+                    <input type="checkbox" class="mbr" id="mbr9" value="곽보성">
+                    <label for="mbr9">곽보성</label><br>
+                </div>
+            </div>
+        </section>
+        <!-- 1) 새로운 회원 추가 -->
+        <!-- 2) 회원리스트 -->
+        <!-- 1) 매칭버튼 -->
+        <!-- 1) 대진표 영역 -->
+        <!-- 1) 회원리스트 삭제 -->
+    </main>
+</body>
+</html>
